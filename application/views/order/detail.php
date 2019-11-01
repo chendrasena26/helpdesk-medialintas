@@ -46,6 +46,19 @@ if($order[0]['status'] == 1) {
                         <p>Status: <span class="badge badge-<?php echo $color ?>"><?php echo $status?></span></p>
                     </div>
                 </div>
+                <?php if($status == "closed") { ?>
+                <div class="col-md-12">
+                  <div class="pull-left">
+                      <p>Laporan Teknisi: <?php echo $order[0]['desc_teknisi']?></p>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="pull-left">
+                        <p>Rating: ★<?php echo $order[0]['rating']?></p>
+                        <p>Review: <?php echo $order[0]['review']?></p>
+                    </div>
+                </div>
+                <?php } ?>
                 <div class="col-md-12">
                     <div class="pull-left">
                         <?php include_once('create/maps-demo.php')?>
@@ -59,14 +72,3 @@ if($order[0]['status'] == 1) {
 </div>
 
 
-<!-- <div class="container">
-  <div class="row">
-      <div class="col-md-4">Nomor Transaksi: 10</div>
-      <div class="col-md-4 ml-auto">Tanggal: 30-2-2019</div>
-  </div><br>
-  <div class="col-md-4">Kategori: TV</div><br>
-  <div class="col-md-4">Subkategori: TV jelek</div><br>
-  <div class="col-md">Deskripsi: ajfaj adfadsf dsfads fds fads fds fdsf asf sf f f f asf adsf dasf dasf adsfa df adsf asdf sadf adsf ads fdsa fdsf asf asd fa sdf asf dasfd asdf asf adf asf sad fads fads fasd fa sf asf dasf adsf asf asf asf dasd fa d</div><br>
-  <div class="col-md-4">Teknisi: Baharuddin</div><br>
-  <div class="col-md-4">Status: On progress</div><br>
-</div> -->

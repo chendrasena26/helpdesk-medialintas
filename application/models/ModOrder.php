@@ -84,7 +84,10 @@ class ModOrder extends CI_Model {
 			"teknisi.nama_user AS 'teknisi'",
 			'request.status',
 			'request.latitude',
-			'request.longitude'
+			'request.longitude',
+			'request.desc_teknisi',
+			'request.rating',
+			'request.review'
 		);
 		$this->db->select($sel);
 		$this->db->from('request');
