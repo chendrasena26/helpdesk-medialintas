@@ -3,4 +3,4 @@ Helpdesk Media Lintas Data adalah sistem informasi berbasis web untuk menampung 
 
 ## Cara instal
 1. Import file database helpdesk.sql ke database MySQL
-2. Deploy web
+2. Deploy web ke server
